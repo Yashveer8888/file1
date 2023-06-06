@@ -157,9 +157,14 @@ output--> Arrays horizontally concatenated
 19 complex128:	It is used to represent the complex number where real and imaginary part shares 64 bits each.
 
 # NumPy dtype
+numpy.dtype(object, align, copy)  
 
-
-
+Object: It represents the object which is to be converted to the data type.
+Align: It can be set to any boolean value. If true, then it adds extra padding to make it equivalent to a C struct.
+Copy: It creates another copy of the dtype object.
+  
+d = np.dtype(np.int32)  
+print(d) output--> int32
 
 
 
