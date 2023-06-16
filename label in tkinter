@@ -1,0 +1,30 @@
+# what is label?
+'''Label widgets are used to display text or images. The text displayed by a Label widget can’t be edited by the user. It’s for display purposes only. As you saw in the example at the beginning of this tutorial, you can create a Label widget by instantiating the Label class and passing a string to the text parameter:'''
+
+import tkinter as tk
+label = tk.Label(text="Hello, Tkinter")
+
+# You can control Label text and background colors using the foreground and background parameters:
+import tkinter as tk
+w=tk.Tk()
+label = tk.Label(text="Hello, Tkinter",foreground="white",  # Set the text color to whitebackground="black"  # Set the background color to black).pack()
+w.mainloop()
+
+# You can also specify a color using hexadecimal RGB values:
+label = tk.Label(text="Hello, Tkinter", background="#34A2FE")  #  #34A2FE--> blue
+
+# You can also control the width and height of a label with the width and height parameters:
+label = tk.Label(text="Hello, Tkinter",fg="white",bg="black",width=10,height=10).pack()
+
+anchor:	It specifies the exact position of the text within the size provided to the widget. The default value is CENTER, which is used to center the text within the specified space.
+bg;	The background color displayed behind the widget.
+bitmap:	It is used to set the bitmap to the graphical object specified so that, the label can represent the graphics instead of text.
+bd:	It represents the width of the border. The default is 2 pixels.
+cursor:	The mouse pointer will be changed to the type of the cursor specified, i.e., arrow, dot, etc.
+font:	The font type of the text written inside the widget.
+fg:	The foreground color of the text written inside the widget.
+height:	The height of the widget.
+image:	The image that is to be shown as the label.
+justify:	It is used to represent the orientation of the text if the text contains multiple lines. It can be set to LEFT for left justification, RIGHT for right justification, and CENTER for center justification.
+padx:	The horizontal padding of the text. The default value is 1.
+pady:	The vertical padding of the text. The default value is 1.
